@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/flayout">
+
+
+    <EditText
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchtxt"
+
+        android:layout_marginBottom="67dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp"
+       android:layout_gravity="top"
+        android:hint="Type Movie Name Here......." />
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="36dp"
+        android:background="@android:drawable/ic_menu_search"
+        android:id="@+id/searchbtn"
+        />
+
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="385dp"
+        android:layout_height="440dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="50dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/listView"
+        tools:context="com.example.root.myapplication.MainActivity"
+       >
+
+
+    </ListView>
+    <RelativeLayout
+        style="@style/GenericProgressBackground"
+        android:id="@+id/loadingPanel"
+        >
+        <ProgressBar
+            style="@style/GenericProgressIndicator"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
